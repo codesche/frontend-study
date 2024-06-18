@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_grid1</title>
+    <style>
+        .wrap2 {
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px 200px; */
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            margin-bottom: 20px;
+        }
+        .wrap1 {
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px 200px; */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            margin-bottom: 20px;
+        }
+        .wrap {
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px 200px; */
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: minmax(100px, auto);
+        }
+        .items {
+            padding: 10px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap2">
+        <div class="items">1크래프톤이 배틀그라운드(PUBG) 모바일 게임 내에서 걸그룹 뉴진스와</div>
+        <div class="items">2크래프톤이 배틀그라운드(PUBG) 모바일 게임 내에서 걸그룹 뉴진스와</div>
+        <div class="items">3크래프톤이 배틀그라운드(PUBG) 모바일 게임 내에서 걸그룹 뉴진스와</div>
+        <div class="items">4크래프톤이 배틀그라운드(PUBG) 모바일 게임 내에서 걸그룹 뉴진스와</div>
+        <div class="items">5크래프톤이 배틀그라운드(PUBG) 모바일 게임 내에서 걸그룹 뉴진스와</div>
+    </div>
+    <div class="wrap1">
+        <div class="items">1크래프톤이 배틀그라운드(PUBG) 모바일 게임 내에서 걸그룹 뉴진스와</div>
+        <div class="items">2크래프톤이 배틀그라운드(PUBG) 모바일 게임 내에서 걸그룹 뉴진스와</div>
+        <div class="items">3크래프톤이 배틀그라운드(PUBG) 모바일 게임 내에서 걸그룹 뉴진스와</div>
+        <div class="items">4크래프톤이 배틀그라운드(PUBG) 모바일 게임 내에서 걸그룹 뉴진스와</div>
+        <div class="items">5크래프톤이 배틀그라운드(PUBG) 모바일 게임 내에서 걸그룹 뉴진스와</div>
+        <div class="items">6크래프톤이 배틀그라운드(PUBG) 모바일 게임 내에서 걸그룹 뉴진스와</div>
+        <div class="items">7크래프톤이 배틀그라운드(PUBG) 모바일 게임 내에서 걸그룹 뉴진스와</div>
+    </div>
+    <div class="wrap">
+        <div class="items">1크래프톤이 배틀그라운드(PUBG) 모바일 게임 내에서 걸그룹 뉴진스와</div>
+        <div class="items">2크래프톤이 배틀그라운드(PUBG) 모바일 게임 내에서 걸그룹 뉴진스와</div>
+        <div class="items">3크래프톤이 배틀그라운드(PUBG) 모바일 게임 내에서 걸그룹 뉴진스와</div>
+        <div class="items">4크래프톤이 배틀그라운드(PUBG) 모바일 게임 내에서 걸그룹 뉴진스와</div>
+        <div class="items">5크래프톤이 배틀그라운드(PUBG) 모바일 게임 내에서 걸그룹 뉴진스와</div>
+        <div class="items">6크래프톤이 배틀그라운드(PUBG) 모바일 게임 내에서 걸그룹 뉴진스와</div>
+        <div class="items">7크래프톤이 배틀그라운드(PUBG) 모바일 게임 내에서 걸그룹 뉴진스와</div>
+    </div>
+</body>
+</html>

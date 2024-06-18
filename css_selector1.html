@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        /* 전체 기본 설정 */
+        /* * {
+            color: blue;
+            margin: 0;
+            padding:0;
+        } */
+    </style>
+    <style>
+        /* 태그선택자 */
+        h1 {
+            color: red;
+        }
+
+        p {
+            color: blue;
+        }
+        
+        /* 선택자 */
+        h1, p {
+            text-align : center;
+        }
+        body, p, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <style>
+        /* id 선택자 */
+        #header {
+          background-color: aqua;
+          /* 두께, 모양, 컬러 */
+          border: 5px solid black;
+          height: 50px;   
+        }
+
+        #footer, p {
+            background-color: antiquewhite;
+            border: 3px solid blue;
+        }
+    </style>
+    <style>
+        .box {
+            width: 50px;
+            height: 50px;
+            border: 3px solid silver;
+        }
+        .title {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 12px;
+        }
+    </style>
+    <style>
+        input[type=text] {
+            background-color: aquamarine;
+        }
+        input[type=password] {
+            background-color: blueviolet;
+        }
+        img[src$=png] {
+            border: 3px solid blueviolet;
+        }
+        img[src$=jpg] {
+            border: 3px solid orange;
+        }
+        img[src$=gif] {
+            border: 3px solid blue;
+        }
+    </style>
+    <style>
+        header>div>h1 {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <!-- h1, h2, ul: 자손 선택자 -->
+            <!-- li: 후손 선택자-->
+            <h1>CSS 구조 선택자: 자손, 후손</h1>
+            <h2>선택자</h2>
+            <ul>
+                <li>전체 선택자</li>
+                <li>태그 선택자</li>
+                <li>아이디, 클래스 선택자</li>
+            </ul>
+        </div>
+    </header>
+    
+    <hr>
+    
+    <img src="a.png" width="100" height="150">
+    <img src="a.jpg" width="100" height="150">
+    <img src="a.gif" width="100" height="150">
+
+
+    <input type="text">
+    <input type="password">
+
+    <hr>
+
+    <!-- 큐브 박스 -->
+    <div class="box title">box-1</div>
+    <div class="box">box-2</div>
+    <div class="box title">box-3</div>
+
+    <hr>
+
+    <div id="header">header</div>
+    <div id="nav">nav</div>
+    <div id="aside">aside</div>
+
+    <!-- class 속성 적용 -->
+    <div id="main" class="box">main</div>
+    <div id="footer">footer</div>
+
+    <hr>
+
+    <h1>NC 소프트의 분사 시나리오</h1>
+    <p>
+        계속된 실적 부진을 겪고 있는 엔씨소프트가 연내에 일부 사업부문을 분사, 경영 효율화를 꾀한다.
+        9일 엔씨소프트에 따르면 박병무 공동대표는 이날 오후 전 직원들을 대상으로 진행된 온·오프라인 설명회에서 분사 계획을 언급했다.
+        설명회는 엔씨소프트가 추진 중인 변화의 배경과 방향성에 대한 정보를 모든 구성원들에게 공유하기 위해 마련했다.
+        https://www.4th.kr/news/articleView.html?idxno=2062270
+    </p>
+
+    <h1>test</h1>
+</body>
+</html>

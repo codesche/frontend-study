@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_attr2</title>
+    <style>
+        div {
+            width: 50%;
+            height: 30px;
+            border: 1px solid black;
+            margin: 10px; 
+        }
+
+        div:nth-child(1) {
+            /* background-color: aqua; */
+            background-color: rgba(255, 255, 255, 0.0);
+        }
+
+        div:nth-child(2) {
+            background-color: #da12de;
+            /*                  #00~ff 00~ff 00~ff */
+        }
+        div:nth-child(3) {
+            background-color: rgb(46, 158, 74);
+            /*                rgb(red, green, blue) 0~255 */
+        }
+        div:nth-child(4) {
+            background-color: rgba(255, 255, 255, 0.0);
+        }
+        header {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>box-1</div>
+    <div>box-2</div>
+    <div>box-3</div>
+    <header>
+        <div>box-4</div>
+    </header>
+    
+</body>
+</html>

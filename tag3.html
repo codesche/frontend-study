@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+</head>
+<body>
+    <h1>form tag2</h1>
+  
+    <!-- action을 생략하면 자기 자신의 경로(현재 경로)로 이동함 
+    => http://127.0.0.1:5500/tag3.html?search=html5-->
+    <form>
+        <input type="text" name="search">
+        <input type="submit">
+    </form>
+    <hr>
+    <h1>form tag1</h1>
+    <form action="tag1.html" method="post">
+        <!-- 입력란에 html5 라고 입력하면 URL이 다음과 같이 확인됨
+         http://127.0.0.1:5500/tag1.html?search=html5 -->
+        <input type="text" name="search">
+
+        <!-- http://127.0.0.1:5500/tag3.html? URL 상에 물음표가 추가됨-->
+        <!-- form : action => 데이터를 받아서 처리할 주소 target -->
+        <!-- ? : querystring 개념 숙지 -->
+        <input type="submit">
+    </form>
+</body>
+</html>

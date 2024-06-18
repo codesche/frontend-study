@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_onetruelayout</title>
+    <style>
+        /* div {
+            border: 1px solid #aaa;
+        } */
+        #header {
+            width: 600px;
+            /* height: 50px; */
+            /* text-align: center; */
+            line-height: 50px;
+            background-color: skyblue;
+        }
+        #wrap {
+            overflow: hidden;
+            width: 600px;
+        }
+        #aside {
+            width: 180px;
+            height: 200px;
+            background-color: bisque;
+            float: left;
+        }
+        #main {
+            width: 400px;
+            height: 200px;
+            background-color: darkseagreen;
+            float: right;
+        }
+        #footer {
+            width: 600px;
+            height: 50px;
+            background-color: darksalmon;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h4>Site name</h4>
+        header
+        <div>메뉴1 | 메뉴2 | 메뉴3 | 메뉴4 | 메뉴5</div>
+    </div>
+    <div id="wrap">
+        <div id="aside">aside</div>
+        <div id="main">main</div>
+    </div>
+    <div id="footer">footer</div>
+</body>
+</html>

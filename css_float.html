@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_float</title>
+
+    <style>
+        #wrap {
+            overflow: hidden;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            margin: 10px;
+            /* float: left; */
+            /* float: right; */
+        }
+        #msg {
+            clear: both;
+        }
+        #box1 {
+            float: left;
+        }
+        #box2 {
+            float: right;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- header -->
+    <h1>타이틀</h1>
+    <div id="wrap">
+        <!-- left aside -->
+        <div class="box" id="box1">box1</div>
+
+        <!-- right aside -->
+        <div class="box" id="box2">box2</div>
+    </div>
+
+    <!-- footer -->
+    <div id="msg">설명글</div>
+</body>
+</html>

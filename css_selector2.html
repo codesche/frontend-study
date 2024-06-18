@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS2</title>
+    <style>
+        /* 자손 선택자 */
+        #main>h1 {
+            background-color: yellow;
+        }
+        /* 후손 선택자  - 후손만 적용됨 */
+        /* #main h1 {
+            color: red;
+        } */
+        
+        /* 자손만 적용됨 div > h2 */
+        #main>h2 {
+            color: blue;
+        }
+        
+        /* 후손 선택자에 이텔릭체 적용 */
+        #main h2 {
+            font-style: italic;
+        }
+
+        /* h2가 하나만 있기 때문에 ul의 후손 선택자인 h2 적용 */
+        #main>ul h2 {
+            background-color:cornflowerblue;
+        }
+        
+        /* div의 h1, h2 적용 */
+        #main h1, #main h2 {
+            border: 3px solid #AAAAAA;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>선택자 예제</h1>
+    <div id="main">
+        <h1>CSS 선택자</h1>
+        <h2>범위 선택자</h2>
+        <ul>
+            <li><h1>자손 선택자</h1></li>
+            <li><h2>후손 선택자</h2></li>
+            <li>동위 선택자</li>
+        </ul>
+    </div>
+
+    <h1>테스트 태그</h1>
+    <h2>sub title</h2>
+
+    <h1>테스트 태그</h1>
+    <h2>sub title</h2>
+    
+</body>
+</html>

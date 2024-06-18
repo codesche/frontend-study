@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_position2</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            
+            /* 박스가 겹쳐짐 */
+            position: absolute;
+        }
+
+        #box1 {
+            background-color: red;
+            left: 5px;
+            top: 5px;
+        }
+
+        #box2 {
+            background-color: blueviolet;
+            left: 10px;
+            top: 10px;
+        }
+
+        #box3 {
+            background-color: aqua;
+            left: 15px;
+            top: 15px;
+        }
+
+        #wrap {
+            position: relative;
+            height: 50px;
+            width: 250px;
+            border: 2px solid #aaa;
+
+            /* 영역을 한정지음 */
+            /* overflow: hidden; */
+            
+            /* scroll 추가됨 (수직, 수평 방향) */
+            /* overflow: scroll; */
+
+            /* 자동 스크롤 설정 */
+            overflow: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Title</h1>
+    <div id="wrap">
+        <div id="box1" class="box">box-1</div>
+        <div id="box2" class="box">box-2</div>
+        <div id="box3" class="box">box-3</div>
+    </div>
+    <h1>Title2</h1>
+</body>
+</html>

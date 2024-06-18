@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input tag</title>
+</head>
+<body>
+    <form>
+    <div><input></div>
+
+    <!-- value = 초기값, 처음에는 name이 들어가야 한다 -->
+    <!-- name : 넘기는 데이터를 식별할 수 있는 역할 -->
+    <div><input type="text" value="cool" name="username" id="username"></div>
+
+    <!-- 문자, 숫자 입력 시 암호화 됨-->
+    <div><input type="password"></div>
+
+    <!-- 체크박스 : 여러 개 동시 선택 가능 -->
+    <input type="checkbox"> 개인정보 동의 <br>
+
+    <!-- radio : 여러 개 중 하나, name을 설정하면 하나 씩 선택 가능 -->
+    <!-- checked - 단일 값인 경우 on이 됨-->
+    성별 : 
+    남 <input type="radio" name="gender" > 
+    여 <input type="radio" name="gender" checked>
+    <br>
+
+    <!-- selected: 선택되는 초기값 지정 -->
+    <!-- value: 전송되는 데이터가 0, 1, 2, 3
+     최상 : 0, 상 : 1, 중 : 2, 하 : 3 -->
+    <select name="status">
+        <option value="0">최상</option>
+        <option value="1">상</option>
+        <option value="2">중</option>
+        <option value="3">하</option>
+    </select> 상태
+
+    <br>
+    <input type="file">
+    <br>
+    <textarea></textarea>
+
+    <!-- 보여줄 필요 없을 때-->
+    <input type="hidden" name="memberid" value="cool">
+    <br>
+
+    <!-- 날짜 표시 및 설정 -->
+    <input type="date"><br>
+
+    <!-- 날짜 + 시간 표시 및 설정-->
+    <input type="datetime-local"><br>
+
+    <!-- 시간 표시 및 설정-->
+    <input type="time"><br>
+
+    <!-- 월 표시 및 설정 -->
+    <input type="month"><br>
+
+    <!-- 주 표시 및 설정 -->
+    <input type="week"><br>
+    
+    <!-- 활용도 낮음 -->
+    <input type="email"><br>
+
+    <!-- url 규칙: https://www.naver.com/intro/intro.html -->
+    <!--          프로토콜 도메인     경로       파일이름   -->
+    <!-- 활용도 낮음 -->
+    <input type="url"><br>
+
+    <!-- 수량 -->
+    <input type="number"><br>
+
+    <input type="tel"><br>
+
+    <!-- 막대 바로 범위 조정 가능 -->
+    <input type="range" min="0" max="100"><br>
+
+    <input type="submit" value="회원가입">
+
+    <!-- 모든 내용 초기화 -->
+    <input type="reset"> 
+    </form>
+</body>
+</html>

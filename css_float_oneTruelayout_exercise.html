@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블로그 예제</title>
+    <style>
+        /* div {
+            border: 1px solid #aaa;
+        } */
+        #header {
+            width: 800px;
+            line-height: 50px;
+        }
+        #wrap {
+            overflow: hidden;
+            width: 800px;
+        }
+        #aside {
+            background-color: bisque;
+            width: 200px;
+            height: 200px;
+            float: right;
+        }
+        #main {
+            width: 600px;
+            height: 200px;
+            /* background-color: darkseagreen; */
+            float: left;
+            
+        }
+        #footer {
+            width: 800px;
+            height: 50px;
+            background-color: darksalmon;
+        }
+        #text1 {
+            width: 600px;
+        }
+
+        ul {
+            overflow: hidden;
+        }
+
+        li {
+            list-style: none;
+            float: left;
+            width: 50px;
+            text-align: center;
+        }
+        img {
+            width: 100px;
+            height: 70px;
+            background-size: contain;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>HTML5 Example Preview</h1>
+    </div>
+    <div>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul> 
+    </div>
+    <hr>
+    <div id="wrap">
+        <div id="aside">aside</div>
+            <ul>
+                <li>12</li>
+                <li>23</li>
+                <li>45</li>
+            </ul>
+        <div id="main">
+            <h1>HTML5 개요와 활용</h1>
+            <p>2013년 02월 14일</p>
+            <p>
+                <img src="image/mini.jpg">
+            </p>
+        </div>
+        <div id="text1">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+        </div>
+    </div>
+    <div id="footer">footer</div>
+</body>
+</html>
