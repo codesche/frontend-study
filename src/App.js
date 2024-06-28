@@ -15,6 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
+          리액트 프로젝트 생성
           Learn React
         </a>
       </header>
